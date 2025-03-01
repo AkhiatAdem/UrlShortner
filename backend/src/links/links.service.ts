@@ -34,11 +34,8 @@ export class LinksService {
             return "url not found"
         }
 
-        return { url: 'https://www.google.com', statusCode: 301 };
+        return { url: `https://${link.link}`, statusCode: 301 };
 
         
-
-
-
     }
 }

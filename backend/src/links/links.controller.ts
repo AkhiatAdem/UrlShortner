@@ -16,7 +16,7 @@ export class LinksController {
         
 
     }
-    @Redirect()
+    @Redirect('/')
     @Get("l/:id")
     async link(@Param('id') id: string){
         return this.linkService.Getlink(id);
